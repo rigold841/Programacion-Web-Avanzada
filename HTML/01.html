@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rigoberto Galeano | Portafolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+body{
+    background: linear-gradient(135deg,#020617,#0f172a,#1e293b);
+    color:#e2e8f0;
+    scroll-behavior:smooth;
+}
+
+/* NAV */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:#020617;
+    padding:8px;
+    text-align:center;
+    z-index:1000;
+}
+nav a{
+    color:#38bdf8;
+    margin:0 10px;
+    text-decoration:none;
+    font-size:13px;
+}
+
+/* HEADER */
+header{
+    height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+header h1{font-size:2.5rem;}
+header h2{color:#38bdf8;height:25px;}
+header p{margin-top:5px;}
+
+/* FOTO DE PERFIL */
+header img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+    border:3px solid #38bdf8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px; /* más espacio sobre el botón */
+    padding:10px 25px;
+    border-radius:20px;
+    background:#38bdf8;
+    color:#000;
+    text-decoration:none;
+}
+
+/* SECTIONS */
+section{
+    padding:50px 15px;
+    max-width:900px;
+    margin:auto;
+}
+h3{
+    text-align:center;
+    margin-bottom:20px;
+    color:#38bdf8;
+    font-size:1.6rem;
+}
+
+/* CARD */
+.card{
+    background:#1e293b;
+    padding:15px;
+    border-radius:12px;
+    margin-bottom:15px;
+    transition:0.3s;
+}
+.card:hover{transform:scale(1.02);}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+/* SKILLS */
+.skill{margin:8px 0;}
+.bar{
+    background:#334155;
+    border-radius:20px;
+    overflow:hidden;
+}
+.bar div{
+    height:8px;
+    background:#38bdf8;
+}
+
+/* LIST */
+.list-item{
+    margin-bottom:10px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:15px;
+    background:#020617;
+}
+
+/* ANIMATION */
+.fade{opacity:0;transform:translateY(15px);transition:0.5s;}
+.show{opacity:1;transform:translateY(0);}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+    .grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#perfil">Perfil</a>
+<a href="#skills">Habilidades</a>
+<a href="#formacion">Formación</a>
+<a href="#proyectos">Proyectos</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+<header id="inicio">
+<div>
+    <!-- FOTO DE PERFIL -->
+    <img src="perfil.jpg" alt="Rigoberto Galeano">
+
+    <h1>Rigoberto Galeano</h1>
+    <h2 id="typing"></h2>
+    <p>Tebicuary, Guairá, Paraguay</p>
+    <p>0992704368 | rigold880@gmail.com</p>
+    <a href="#contacto" class="btn">Contactar</a>
+</div>
+</header>
+
+<section id="perfil" class="fade">
+<h3>Perfil Profesional</h3>
+<div class="card">
+<p>
+Desarrollador en formación con conocimientos en Java, Kotlin y Dart. Experiencia en proyectos académicos y personales enfocados en el desarrollo de aplicaciones, especialmente en el área móvil.
+</p>
+<br>
+<p>
+Capacidad de aprendizaje constante, buena lógica de programación y enfoque en la resolución de problemas. Busco adquirir experiencia profesional y seguir mejorando mis habilidades técnicas.
+</p>
+</div>
+</section>
+
+<section id="skills" class="fade">
+<h3>Habilidades</h3>
+<div class="grid">
+<div class="card">
+<div class="skill">Java<div class="bar"><div style="width:70%"></div></div></div>
+<div class="skill">Kotlin<div class="bar"><div style="width:50%"></div></div></div>
+<div class="skill">Dart<div class="bar"><div style="width:40%"></div></div></div>
+</div>
+<div class="card">
+<div class="skill">Android<div class="bar"><div style="width:50%"></div></div></div>
+<div class="skill">SQLite<div class="bar"><div style="width:45%"></div></div></div>
+<div class="skill">Lógica<div class="bar"><div style="width:65%"></div></div></div>
+</div>
+</div>
+</section>
+
+<section id="formacion" class="fade">
+<h3>Formación</h3>
+<div class="card">
+<h4>Educación Académica</h4>
+<div class="list-item">Primaria: Escuela Básica N°36 Antonio Bosch</div>
+<div class="list-item">Secundaria: Colegio Nacional Delfín Chamorro</div>
+<div class="list-item">Preparatoria: Colegio Técnico y Centro de Entrenamiento Vocacional Villarrica</div>
+</div>
+<div class="card">
+<h4>Cursos</h4>
+<div class="list-item">Curso de Ofimática (Básico, Medio y Avanzado) - 2021</div>
+<div class="list-item">Curso de Java - Sololearn (2021)</div>
+<div class="list-item">Curso de JavaScript - Sololearn (2021)</div>
+<div class="list-item">Curso de Base de Datos - Aprende.org (2021)</div>
+</div>
+</section>
+
+<section id="proyectos" class="fade">
+<h3>Proyectos</h3>
+<div class="card">
+<h4>Aplicación de Entrenamiento</h4>
+<p>App Android para gestión de rutinas y seguimiento de ejercicios.</p>
+</div>
+<div class="card">
+<h4>Sistema de Facturación</h4>
+<p>Sistema en Java para registrar ventas y generar comprobantes.</p>
+</div>
+<div class="card">
+<h4>Control de Gastos</h4>
+<p>App básica para gestión de ingresos y egresos.</p>
+</div>
+</section>
+
+<section id="contacto" class="fade">
+<h3>Contacto</h3>
+<div class="card">
+<p><b>Email:</b> rigold880@gmail.com</p>
+<p><b>Teléfono:</b> 0992704368</p>
+<p>Disponible para oportunidades de aprendizaje y proyectos.</p>
+</div>
+</section>
+
+<footer>
+© 2026 Rigoberto Galeano
+</footer>
+
+<script>
+/* TYPING */
+const text="Desarrollador en formación";
+let i=0;
+function typing(){
+    if(i<text.length){
+        document.getElementById("typing").innerHTML+=text.charAt(i);
+        i++;
+        setTimeout(typing,50);
+    }
+}
+typing();
+
+/* SCROLL ANIMATION */
+const faders=document.querySelectorAll('.fade');
+window.addEventListener('scroll',()=>{
+    faders.forEach(el=>{
+        if(el.getBoundingClientRect().top<window.innerHeight-40){
+            el.classList.add('show');
+        }
+    })
+});
+</script>
+
+</body>
+</html>
